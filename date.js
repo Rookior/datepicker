@@ -12,6 +12,11 @@
 		var firstDay = new Date(year,month-1,1);
 		var firstDayWeekDay = firstDay.getDay();
 		if(firstDayWeekDay === 0) firstDayWeekDay = 7;
+		
+		
+		year = firstDay.getFullYear();
+		month  = firstDay.getMonth() + 1; 
+		
 		var lastDayOfLastMonth = new Date(year,month-1,0);
 		var lastDateOfLastMonth = lastDayOfLastMonth.getDate();
 		var preMonthDayCount = firstDayWeekDay - 1;
@@ -46,7 +51,11 @@
 			});
 		}
 		
-		return ret;
+		return {
+			year:year,
+			month:month,
+			days:ret
+		};
 		
 	}
 	
