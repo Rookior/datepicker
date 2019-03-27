@@ -15,3 +15,15 @@
 当月的第一天：new Date(year,month-1,1)
 
 当月的最后一天： new Date(year,month,0)
+
+
+## 课程总结
+1.使用HTML合理规划组件结构
+
+2.为组件编写美观的样式
+
+3.如何使用JavaScript获取组件所需的数据
+
+4.将数据与HTML结合
+
+5.用户事件处理
