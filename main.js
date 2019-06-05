@@ -97,7 +97,7 @@
 		
 		$wrapper.addEventListener('click',function(e){
 			var $target = e.target;
-			if($target.classList.contains('ui-datepicker-btn')) return;			
+// 			if($target.classList.contains('ui-datepicker-btn')) return;			
 			//上一月
 			if($target.classList.contains('ui-datepicker-prev-btn')){
 				datepicker.render('prev');
